@@ -1,0 +1,39 @@
+<header>
+  <div class="header">
+    <nav class="nav container">
+      <span class="nav__logo">KREATIFY</span>
+
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" [ngClass]="{'active': activeRoute == 'home'}" (click)="activeRoute = 'home'" class="nav__link">
+            Home
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" [ngClass]="{'active': activeRoute == 'about'}" (click)="activeRoute = 'about'"
+            class="nav__link">
+            A Propos
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#sevices" [ngClass]="{'active': activeRoute == 'services'}" (click)="activeRoute = 'services'"
+            class="nav__link">
+            Services
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#projects" [ngClass]="{'active': activeRoute == 'projects'}" (click)="activeRoute = 'projects'"
+            class="nav__link">
+            Projets
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" [ngClass]="{'active': activeRoute == 'contact'}" (click)="activeRoute = 'contact'"
+            class="nav__link">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
